@@ -1,0 +1,24 @@
+{
+  "name": "stream-roller",
+  "version": "1.0.0",
+  "description": "Keep your streams rolling with this simple watchlist creator!",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerprestonholt/stream-roller.git"
+  },
+  "keywords": [],
+  "author": "Tyler Holt -> https://github.com/tylerprestonholt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerprestonholt/stream-roller/issues"
+  },
+  "homepage": "https://github.com/tylerprestonholt/stream-roller#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
