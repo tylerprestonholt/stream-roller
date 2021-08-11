@@ -4,7 +4,9 @@
   "description": "Keep your streams rolling with this simple watchlist creator!",
   "main": "client.js",
   "scripts": {
-
+    "start": "node server/server.js",
+    "build": "webpack",
+    "dev": "webpack serve --open"
   },
   "repository": {
     "type": "git",
