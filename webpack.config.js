@@ -6,7 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
-  mode: 'production',
+  mode: process.env.NODE_ENV,
   module: {
     rules: [
       {
@@ -24,5 +24,10 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       }
     ]
+  },
+  devServer: {
+    hot: true,
+    contentBase: './src/',
+    publicPath: '/build/'
   }
 }
