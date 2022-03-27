@@ -14,4 +14,9 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+app.get('/search', (req,res) => {
+  console.log('Search route triggered!');
+  res.status(200);
+});
+
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}...`));
