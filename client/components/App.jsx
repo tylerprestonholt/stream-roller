@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from './Header.jsx';
+import Searchbar from './Searchbar.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -7,9 +9,10 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Streamroller is up and running!!</h1>
-      </div>
+      <>
+        <Header />
+        <Searchbar />
+      </>
     );
   }
 }
