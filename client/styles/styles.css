@@ -3,11 +3,127 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 14px;
 }
 
+
+body {
+  background-color: lightblue;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  background-color: lightcoral;
+  align-items: center;
+}
+
 h1 {
-  font-size: 24px;
-  color: red;
+  font-family: arial, sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  color: white;
+  margin-left: 20px;
+}
+
+.search-container {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-self: flex-end;
+  height: 60px;
+  width: 600px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 8px lightgray;
+}
+
+#searchbar {
+  flex-grow: 2;
+  font-size: 20px;
+  color: rgb(90, 90, 90);
+  padding-left: 24px;
+  border: none;
+  border-radius: 20px;
+}
+
+#searchbar:focus {
+  outline: none;
+}
+
+#search-button {
+  font-size: 18px;
+  background-color: lightcoral;
+  color: white;
+  padding: 0 24px;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#search-button:hover {
+  text-decoration: underline;
+}
+
+.suggestions-container {
+  display: flex;
+  justify-content: center;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 8px lightgray;
+}
+
+.suggestion {
+  /* font-size: 18px;
+  color: rgb(90, 90, 90); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 12px;
+  margin: 0 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.suggestion:last-child {
+  border: none;
+}
+
+.suggestion p {
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  color: rgb(90, 90, 90);
+  /* border-bottom: 1px solid lightcoral; */
+}
+
+button {
+  height: 40px;
+  background-color: white;
+  font-family: arial, sans-serf;
+  font-size: 18px;
+  color: lightcoral;
+  padding: 0 5px;
+  border: 1px solid lightcoral;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
