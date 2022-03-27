@@ -28,6 +28,9 @@ module.exports = {
   devServer: {
     hot: true,
     contentBase: './src/',
-    publicPath: '/build/'
+    publicPath: '/build/',
+    proxy: {
+      '/search': 'http://localhost:3000'
+    }
   }
 }
